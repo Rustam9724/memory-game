@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Simpsons;
+    src: url("../assets/Simpsonfont.otf");
+}
+
+*, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 10px;
+    color: #000;
+}
+
+@keyframes turning {
+    from {
+        transform: rotateY(0);
+        box-shadow: 0,366vw 0.366vw 0.219vw black;
+    }
+
+    to {
+        transform: rotateY(180deg);
+        box-shadow: -0.366vw 0.366vw 0.219vw black;
+    }
+}
+
+@keyframes turningBack {
+    from {
+        transform: rotateY(180deg);
+        box-shadow: -0.366vw 0.366vw 0.219vw black;
+    }
+
+    to {
+        transform: rotateY(0);
+        box-shadow: 0,366vw 0.366vw 0.219vw black;
+    }
+
+}
+
+.wrapper {
+
+    header {
+        background-color: black;
+        height: 4.51vw;
+        padding-top: 1rem;
+
+        .container {
+            color: #ffe000;
+            font-size: 2.777vw;
+            font-weight: bold;
+            width: max-content;
+            margin: 0 auto;
+            font-family: Simpsons;
+            letter-spacing: 0.5vw;
+        }
+    }
+
+    @media (max-width: 699px) {
+        header {
+            padding-top: 0.5rem;
+        }
+    }
+
+    main {
+        background-color: #55abe0;
+        padding-top: 5rem;
+        height: calc(100vh - 4.51vw);
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50vw;
+            height: 31.944vw;
+            margin: 0 auto;
+            gap: 1.388vw;
+
+            .card {
+                width: 8.333vw;
+                height: 6.94vw;
+                cursor: pointer;
+                box-shadow: 0.366vw 0.366vw 0.219vw black;
+                border-radius: 0.366vw;
+                background: url("../assets/simpsons.svg") center no-repeat, white;
+                background-size: contain;
+                border: 0.109vw solid black;
+
+                &.bart.inverted {
+                    background-image: url("../assets/bart.png");
+                    background-size: contain;
+                    transition: all 300ms;
+                }
+
+                &.crusty.inverted {
+                    background-image: url("../assets/crusty.jpg");
+                    background-size: contain;
+                }
+
+                &.crazy-doctor.inverted {
+                    background-image: url("../assets/crazy_doctor.jpg");
+                    background-size: contain;
+                }
+
+                &.willi.inverted {
+                    background-image: url("../assets/willi.jpg");
+                    background-size: contain;
+                }
+
+                &.homer.inverted {
+                    background-image: url("../assets/homer.jfif");
+                    background-size: contain;
+                }
+
+                &.lisa.inverted {
+                    background-image: url("../assets/lisa.webp");
+                    background-size: contain;
+                }
+
+                &.maggie.inverted {
+                    background-image: url("../assets/maggie.png");
+                    background-size: contain;
+                }
+
+                &.marge.inverted {
+                    background-image: url("../assets/marge.jfif");
+                    background-size: contain;
+                }
+
+                &.milhous.inverted {
+                    background-image: url("../assets/milhous.webp");
+                    background-size: contain;
+                }
+
+                &.smithers.inverted {
+                    background-image: url("../assets/smithers.webp");
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
