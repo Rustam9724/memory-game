@@ -1,0 +1,143 @@
+/*!**********************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/style.scss ***!
+  \**********************************************************************************************************************************************************/
+@font-face {
+  font-family: Simpsons;
+  src: url(7cd242e45d718adeb8a9.otf);
+}
+*, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-size: 10px;
+  color: #000;
+}
+
+@keyframes turning {
+  from {
+    transform: rotateY(0);
+    box-shadow: 0, 366vw 0.366vw 0.219vw black;
+  }
+  to {
+    transform: rotateY(180deg);
+    box-shadow: -0.366vw 0.366vw 0.219vw black;
+  }
+}
+@keyframes turningBack {
+  from {
+    transform: rotateY(180deg);
+    box-shadow: -0.366vw 0.366vw 0.219vw black;
+  }
+  to {
+    transform: rotateY(0);
+    box-shadow: 0, 366vw 0.366vw 0.219vw black;
+  }
+}
+.wrapper header {
+  background-color: black;
+  height: 4.51vw;
+  padding-top: 1rem;
+}
+.wrapper header .container {
+  color: #ffe000;
+  font-size: 2.777vw;
+  font-weight: bold;
+  width: max-content;
+  margin: 0 auto;
+  font-family: Simpsons;
+  letter-spacing: 0.5vw;
+}
+@media (max-width: 699px) {
+  .wrapper header {
+    padding-top: 0.5rem;
+  }
+}
+.wrapper main {
+  background-color: #55abe0;
+  padding-top: 5rem;
+  height: calc(100vh - 4.51vw);
+}
+.wrapper main .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: 31.944vw;
+  margin: 0 auto;
+  gap: 1.388vw;
+}
+.wrapper main .container .card {
+  width: 8.333vw;
+  height: 6.94vw;
+  cursor: pointer;
+  box-shadow: 0.366vw 0.366vw 0.219vw black;
+  border-radius: 0.366vw;
+  background: url(ca8220f2068dec262917.svg) center no-repeat, white;
+  background-size: contain;
+  border: 0.109vw solid black;
+}
+.wrapper main .container .card.bart.inverted {
+  background-image: url(9b8eb6a581550a4a4b4e.png);
+  background-size: contain;
+  transition: all 300ms;
+}
+.wrapper main .container .card.crusty.inverted {
+  background-image: url(6c964d80c4770fc77e31.jpg);
+  background-size: contain;
+}
+.wrapper main .container .card.crazy-doctor.inverted {
+  background-image: url(d4edb553bacb758b49b2.jpg);
+  background-size: contain;
+}
+.wrapper main .container .card.willi.inverted {
+  background-image: url(ccb98727becb809f5a7d.jpg);
+  background-size: contain;
+}
+.wrapper main .container .card.homer.inverted {
+  background-image: url(614e5e5839deee63836b.jfif);
+  background-size: contain;
+}
+.wrapper main .container .card.lisa.inverted {
+  background-image: url(36dc2efc97f3b5d49a2d.webp);
+  background-size: contain;
+}
+.wrapper main .container .card.maggie.inverted {
+  background-image: url(83746afb335299834fdb.png);
+  background-size: contain;
+}
+.wrapper main .container .card.marge.inverted {
+  background-image: url(a3959c133f1e2a8bb5e3.jfif);
+  background-size: contain;
+}
+.wrapper main .container .card.milhous.inverted {
+  background-image: url(6aaa1ccdecf49c27d35f.webp);
+  background-size: contain;
+}
+.wrapper main .container .card.smithers.inverted {
+  background-image: url(b91426f6a72026261bd7.webp);
+  background-size: contain;
+}
+
+/*# sourceMappingURL=main.66b102dad7b577e4959d.css.map*/
